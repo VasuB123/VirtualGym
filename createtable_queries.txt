@@ -1,0 +1,5 @@
+CREATE TABLE `virtualgym`.`biceprepdata` ( `exer_name` INT NULL , `l_reps` VARCHAR(200) NULL , `r_reps` VARCHAR(200) NULL , `rh_reps` VARCHAR(200) NULL , `lh_reps` VARCHAR(200) NULL , `rl_elbow` VARCHAR(200) NULL , `ll_relbow` VARCHAR(200) NULL , `timestamp` VARCHAR NULL , `username` VARCHAR(200) NULL, `start_timestamp` VARCHAR NULL );
+CREATE TABLE `virtualgym`.`squatsrepdata` ( `exer_name` VARCHAR(200) NULL , `rep` VARCHAR(200) NULL , `timestamp` TIMESTAMP NULL , `username` VARCHAR(200) NULL, `start_timestamp` VARCHAR NULL ) 
+
+
+
