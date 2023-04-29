@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="/static/CSS/style.css">
+    <link rel="stylesheet" media="screen and (max-width:808px)" href="/static/CSS/Phone.css">
+    <link rel="stylesheet" href="/static/sig1.css">
+  </head>
+  <body style="background-color:rgba(169, 169, 169, 0.403);">
+    <!-- <header> -->
+      <div class="container" style="background-color: rgba(0, 0, 0, 0.762);">
+        
+        <h1 class="logo" style="color:beige; padding: 20px; font-style:oblique; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">Services</h1>
+        <!-- <strong><nav>
+          <ul class="index1">
+            <li class=".h-secondary"><a href="{{ url_for('BicepCurl') }}">Bicep Curl</a></li>
+            <li class=".h-primary"><a href="{{ url_for('YogaPose') }}">Yoga Pose</a></li>
+           
+          </ul>
+        </nav></strong> -->
+      </div>
+      <section id="services-container">
+        <div id="back">
+            <h1 class="h-primary center" style="color:rgba(0, 0, 0, 0.778); font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">Choose any one.</h1>
+            <div id="services">
+                <div class="box">
+                    <!-- <img style="width:350px; height:350px; border-radius: 10px; border:1px solid black" src="/static/bicepcurl.jpg" alt=""> -->
+                    <h2 class="h-secondary center"><a href="{{ url_for('BicepCurl') }}" style="color:rgba(0, 0, 0, 0.79); font-family: cursive;"><img style="width:350px; height:350px; border-radius: 10px; border:1px solid black" src="/static/bicepcurl.jpg" alt="">Bicep Curl</a></h2>
+
+                </div>
+                <div class="box">
+                  <h2 class="h-secondary center" style="color:rgba(0, 0, 0, 0.797) ; font-family:cursive;"><a href="{{ url_for('YogaPose') }}" ><img style="width:350px; height:350px; border-radius: 10px; border:1px solid black" src="/static/yogapose.png" alt="">
+                    </a>Yoga Pose</h2>
+                </div>
+                
+                <div class="box">
+                  <h2 class="h-secondary center" style="color:rgba(0, 0, 0, 0.797) ; font-family:cursive;"><a href="{{ url_for('Squats') }}" ><img style="width:350px; height:350px; border-radius: 10px; border:1px solid black" src="/static/squats.jpg" alt="">
+                    </a>Squats</h2>
+                </div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+   
+  </body>
+</html>

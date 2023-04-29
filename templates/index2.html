@@ -1,0 +1,110 @@
+{% extends "base.html" %}
+{% block content %}
+<section id="home">
+    <h1 class="h-primary">Welcome to VirtualGym</h1>
+    <!-- <p><strong>Importance of Yoga.</strong><p> -->
+    <p>“The purpose of yoga is to build strength, awareness and harmony in both the mind and body,”
+    </p>
+    <p>“The relaxation techniques incorporated in yoga can lessen chronic pain, such as lower back pain, arthritis,
+        headaches and carpal tunnel syndrome,”
+    </p>
+    <!-- <button class='btn'>Order Now</button> -->
+</section>
+<section id="services-container">
+    <div id="back">
+        <h1 class="h-primary center">Famous Yoga Personalites</h1>
+        <div id="services">
+            <div class="box">
+                <img style="border-radius: 10px; border:1px solid black" src="/static/krishnamacharya.jpg" alt="">
+                <h2 class="h-secondary center">Tirumalai Krishnamacharya</h2>
+                <p class="center">He is known as the ‘Father of Modern Yoga’. He is popularly known for being the
+                    architect of vinyasa and he’s also the mind behind the revival of ‘Hatha Yoga’. He has both the
+                    knowledge of Ayurveda and Yoga, and has mixed them proportionately to restore health. He is said
+                    to have control over his heartbeat and is believed to have mastered the art of holding his beat
+                    as well! </p>
+
+            </div>
+            <div class="box">
+                <img style="border-radius: 10px; border:1px solid black" src="/static/SwamiSivananda.jpg" alt="">
+                <h2 class="h-secondary center">Swami Sivananda Saraswati</h2>
+                <p class="center">Born in tamil Nadu sivananda saraswati is prominently known for combining karma
+                    yoga, bhakti yoga, jnana yoga and raja yoga. At the age of 40 sivananda saraswati came to
+                    rishikesh in the search of self realization with the rigorous practice of yoga and meditation.
+                    Later on he established siavananda ashram that follows the path of swami sivananda saraswati. He
+                    went on to spread the teaching of yoga all over the world..</p>
+
+            </div>
+            <div class="box">
+                <img style="border-radius: 10px; border:1px solid black" src="/static/BKSIyengar.jpg" alt="">
+                <h2 class="h-secondary center">B.K.S Iyengar</h2>
+                <p class="center">BKS Iyengar or Bellur Krishnamacharya Sundararaja Iyengar was the founder of the
+                    famous Iyengar Yoga. He started on the path of yoga after suffering from various diseases
+                    throughout the childhood that made him very weak. He started his yogic journey under his brother
+                    in law T Krishnamacharya and played a pivotal role in spreading the teaching of hatha yoga in
+                    the west.</p>
+
+            </div>
+        </div>
+    </div>
+</section>
+<section id="client-section">
+    <h1 class="h-primary center">Quotes</h1>
+    <div id="clients">
+        <div class="client-item">
+            <!-- <img src="img/c1.png" alt="Our Client"> -->
+            <p>“He who has health has hope,<br> and he who has hope has everything.” <br>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; ~Thomas Carlyle
+            </p>
+        </div>
+        <div class="client-item">
+            <!-- <img src="img/c3.png" alt="Our Client"> -->
+            <p>“Health is not valued until sickness comes.”<br>
+                &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; 
+                ~ Thomas Fuller</p>
+        </div>
+        <div class="client-item">
+            <!-- <img src="img/c2.png" alt="Our Client"> -->
+            <p> “It is health which is real wealth and not pieces of gold and silver. ”
+                <br>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+                ~ Mahatma Gandhi</p>
+        </div>
+        <div class="client-item">
+            <!-- <img src="img/c2.png" alt="Our Client"> -->
+            <p> “Happiness lies first of all in health.”  
+                <br>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+                ~ George William Curtis</p>
+        </div>
+    </div>
+</section>
+
+<section id="contact">
+    <h1 class="h-primary center">Contact Us</h1>
+    <div id="contact-box">
+        <form action="">
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" name="name" id="name" placeholder="Enter your name">
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" name="name" id="email" placeholder="Enter your email">
+            </div>
+            <div class="form-group">
+                <label for="phone">Phone Number:</label>
+                <input type="phone" name="name" id="phone" placeholder="Enter your phone no.">
+            </div>
+            <div class="form-group">
+                <label for="message">Message:</label>
+                <textarea name="message" id="message" cols="30" rows="10"></textarea>
+            </div>
+            <div class="btnn">
+                <button type="button">Send</button>
+            </div>
+        </form>
+    </div>
+</section>
+  
+{% endblock content %}
+    
+
+
+  
