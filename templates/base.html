@@ -1,0 +1,104 @@
+<!-- <a href="index.html">index</a> -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Virtual Gym</title>
+  <link rel="stylesheet" href="/static/CSS/style.css">
+  <link rel="stylesheet" media="screen and (max-width:808px)" href="/static/CSS/Phone.css">
+  <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&family=Otomanopee+One&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/static/sig1.css">
+  <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&family=Otomanopee+One&display=swap" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <!-- CSS only -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+  <!-- <link rel="stylesheet" href="Web/ind.css"> -->
+  <!-- <link rel="stylesheet" href="https://pyscript.net/alpha/pyscript.css" /> -->
+  <!-- <script defer src="https://pyscript.net/alpha/pyscript.js"></script>
+<py-env>
+    - opencv-python
+    - mediapipe
+    - math
+  </py-env> -->
+
+</head>
+
+
+<body>
+  <!-- <py-script src="C:\Users\VASU BHAT\Desktop\mjproject\pyn\main.py"></py-script> -->
+
+  {% include "nav.html" %}
+  {% for message in get_flashed_messages() %}
+  <p style="text-align: center;">{{ message }}</p>
+  {% endfor %}
+  <div class="popup-container" id="login-popup">
+    <div class="popup">
+      <h2>
+        <span>USER LOGIN</span>
+        <button type="reset" onclick="popup('login-popup')">X</button>
+      </h2>
+      <form method="POST" action="{{url_for('Login')}}">
+        <input type="text" placeholder="Username" name="username">
+        <input type="password" placeholder="Password" name="password">
+        <button type="submit" class="login-btn" name="login">LOGIN</button>
+      </form>
+    </div>
+  </div>
+
+  <div class="popup-container" id="register-popup">
+    <div class="register popup">
+      <form method="POST" action="{{url_for('Signin')}}">
+        <h2>
+          <span>USER REGISTER</span>
+          <button type="reset" onclick="popup('register-popup')">X</button>
+        </h2>
+        <input type="text" placeholder="Full Name" name="full_name">
+        <input type="text" placeholder="Username" name="username">
+        <input type="email" placeholder="E-mail" name="email">
+        <input type="password" placeholder="Password" name="password">
+        <select name="gender">
+          <option value="na" hidden selected>Select Gender</option>
+          <option value="male">Male</option>
+          <option value="female">Female</option>
+        </select>
+        <input type="text" placeholder="Age" name="age">
+        <input type="text" placeholder="Height (in cm)" name="height">
+        <input type="text" placeholder="Weight (in kg)" name="weight">
+
+        <button type="submit" class="register-btn" name="register">REGISTER</button>
+      </form>
+    </div>
+  </div>
+
+  {% block content %}
+
+  {% endblock content %}
+
+
+
+  <footer class="center">
+    Copyright&copy; www.virtualgym.com. All rights reserved!
+  </footer>
+
+
+
+  <script>
+    function popup(popup_name) {
+      get_popup = document.getElementById(popup_name);
+      if (get_popup.style.display == "flex") {
+        get_popup.style.display = "none";
+      }
+      else {
+        get_popup.style.display = "flex";
+      }
+    }
+  </script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,256 @@
+/* CSS reset */
+*{
+    margin:0;
+    padding:0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+/* CSS variables */
+:root{
+    --navbar-height:59px;
+}
+
+
+/* Navigation Bar  */
+#navbar{
+    display:flex;
+    align-items:center;
+    position:sticky; 
+    top:0px;
+    z-index:1;
+}
+
+#navbar::before{
+    content:"";
+    background-color:black;
+    position:absolute;
+    height:100%;
+    width:100%;
+    top:0px;
+    left:0px;
+    z-index:-1;
+    opacity:0.5;
+}
+
+/* Navigation Bar: Logo and image  */
+#logo{
+    margin:5px 7px;
+}
+
+#logo img{
+    height:60px;
+    width:65px;
+    margin:2px 5px;
+}
+
+/* Navigation bar:List styling */
+#navbar ul{
+    display:flex;
+    font-family: 'Bree Serif', serif;
+    
+}
+
+#navbar ul li{
+    list-style:none;
+    font-size:19px;
+}
+
+#navbar ul li a{
+    color:white;
+    display:block;
+    padding:4px 23px;
+    border-radius:23px;
+    text-decoration:none;
+}
+#navbar ul li a:hover{
+    color:black;
+    background-color:white;
+}
+
+/* Home Section  */
+#home{
+    display:flex;
+    flex-direction:column;
+    padding: 2px 200px;
+    height:598px;
+    align-items:center;
+    justify-content:center;
+}
+
+#home::before{
+    content:"";
+    background:url('../Landscape.jpg') no-repeat center center/cover fixed;
+    /* background-size:contain; */
+    position:absolute;
+    top:0px;
+    left:0px;
+    height:670px;
+    width:100%;
+    z-index:-1;
+    opacity:0.9;
+}
+ 
+#home h1{
+    color:rgba(0, 0, 0, 0.844);
+    text-align:center;
+    font-family: 'Otomanopee One', sans-serif;
+}
+
+#home p{
+    color:rgb(142, 140, 140);
+    text-align:center;
+    font-size:1.2rem;
+    font-family: 'Otomanopee One', sans-serif;
+}
+
+/* Services section */
+#services{
+    margin:15px;
+    display:flex;
+}
+
+#back::before{
+    background:url('../service.jpg');
+}
+
+#services .box{
+    border:2px solid grey;
+    padding:20px;
+    margin:1px 10px;
+    margin-bottom:20px;
+    border-radius:20px;
+    background:rgb(212, 206, 206)
+}
+#services .box img{
+    height:160px;
+    display:block;
+    margin:auto;
+}
+
+#services .box p{
+    font-family: 'Bree Serif', serif;
+}
+
+/* Client Section  */
+#client-section{
+   height:250px;
+   position:relative;
+}
+#client-section::before{
+  content:"";
+  background:url('../download.png');
+  position:absolute;
+  height:100%;
+  width:100%;
+  z-index:-1;
+  opacity:0.2;
+  overflow-x: scroll;
+}
+
+#clients{
+    
+    display: flex;
+    /* overflow-x: scroll;
+    position: relative;
+    scroll-behavior: smooth;
+    scroll-snap-type: x mandatory; */
+    /* align-items:center; */
+    /* justify-content:center; */
+}
+ 
+#clients img{
+    height:120px;
+    /* padding:1px; */
+}
+
+.client-item{
+    padding:0px 15px;
+    font-family:cursive;
+}
+
+/* Contact Services */
+#contact{
+    position:relative;
+}
+
+#contact::before{
+    content:"";
+    position:absolute;
+    height:100%;
+    width:100%;
+    z-index:-1;
+    opacity:0.3;
+    background:url('../contact.jpg') no-repeat center center/cover;
+}
+
+#contact-box {
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    padding-bottom:24px; 
+}
+
+#contact-box input,
+#contact-box textarea{
+    width:100%;
+    padding:0.3rem;
+    border-radius:15px;
+    font-size:0.9rem;
+    border:2px solid white;
+    opacity:0.6;
+    font-family: 'Bree Serif', serif;
+}
+
+#contact-box form{
+    width:40%;
+}
+
+#contact-box label{
+    font-size:1.1rem;
+    font-family: 'Bree Serif', serif;
+}
+
+footer{
+    background:black;
+    color:white;
+    padding:2px 20px;
+    font-family: 'Bree Serif', serif;
+}
+/* Utility classes */
+.h-primary{
+    font-size:2.8rem;
+    padding:10px;
+    margin:0px;
+    font-family: 'Bree Serif', serif;
+}
+
+.h-secondary{
+    font-family: 'Bree Serif', serif;
+    font-size:1.8rem;
+    padding:12px;
+}
+
+.btn{
+    /* padding:6px 15px; */
+    /* border:2px solid white; */
+    /* background-color:rgba(165, 42, 42, 0.411); */
+    /* color:white; */
+    /* margin:16px; */
+    /* font-size:1.1rem; */
+    border-radius:19px;
+    /* font-family: 'Otomanopee One', sans-serif; */
+   
+    
+   
+
+    /* cursor:pointer; */
+}
+
+
+
+ .center{
+     text-align:center; 
+ }
